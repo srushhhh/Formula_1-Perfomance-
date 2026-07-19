@@ -24,7 +24,3 @@ Then pick a season and race in the sidebar.
 - Data is cached for 1 hour per query (`st.cache_data`) to stay well under the API's unauthenticated rate limit (~200 req/hr).
 - Lap-time data (Consistency Score, lap chart) isn't available for every historical race — the app degrades gracefully to "n/a" / an info message when it's missing.
 - To deploy: push to GitHub and connect the repo on [Streamlit Community Cloud](https://streamlit.io/cloud) — no extra config needed beyond `requirements.txt`.
-
-## Next steps (see the full playbook)
-
-This implements the top few items from the ranked feature list — design system, custom metrics, radar chart, championship progression, driver comparison. Natural next additions: ML winner/podium prediction with SHAP, the Fantasy F1 optimizer, and the LLM-grounded query layer.
